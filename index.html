@@ -11,12 +11,393 @@
 </head>
 
 <body>
-    <i class="las la-battery-three-quarters"></i>
-    <div class="btn btn-primary">hello</div>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="fixed">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <h4>Omar ui</h4>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <h6>main</h6>
+                    <li class="active">
+                        <a href="#">
+                            <span> <i class="las la-tachometer-alt"></i> dashboard </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span> <i class="las la-inbox"></i> orders </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span> <i class="las la-chart-pie"></i> analytics </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span> <i class="las la-tasks"></i> categories </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span> <i class="las la-archive"></i> collections </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span> <i class="las la-tags"></i> products </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span> <i class="las la-percentage"></i> discount </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span> <i class="las la-users"></i> employees </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!--regular nav-->
+        <div class="main">
+            <nav class="upper navbar">
+                <div class="right">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="las la-bars"></i>
+                    </button>
+                    <div class="search">
+                        <input type="search" name="" placeholder="Search" id="">
+                        <button>
+                            <i class="las la-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="admin">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="las la-bell"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="las la-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="las la-cog"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="profile">
+                                    <img src="img/hero.jpg" alt="" />
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--content-->
+            <div class="content">
+                <div class="wrap">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                    <div class="child">
+                                        <h6> <i class="las la-users"></i> customers</h6>
+                                        <div class="details">
+                                            <h4>45,345</h4>
+
+                                            <span class="status up">
+                                                <i class="las la-arrow-up"></i>
+                                                5.54%
+                                            </span>
+                                            <p>Since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                    <div class="child">
+                                        <h6> <i class="las la-tasks"></i> orders</h6>
+                                        <div class="details">
+                                            <h4>7,345</h4>
+
+                                            <span class="status down">
+                                                <i class="las la-arrow-down"></i>
+                                                3.44%
+                                            </span>
+                                            <p>Since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                    <div class="child">
+                                        <h6> <i class="las la-wallet"></i> earning</h6>
+                                        <div class="details">
+                                            <h4>$ 15,345</h4>
+
+                                            <span class="status down">
+                                                <i class="las la-arrow-down"></i>
+                                                5.64%
+                                            </span>
+                                            <p>Since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                    <div class="child">
+                                        <h6> <i class="las la-chart-pie"></i> growth</h6>
+                                        <div class="details">
+                                            <h4>+ 55,34%</h4>
+
+                                            <span class="status up">
+                                                <i class="las la-arrow-up"></i>
+                                                5.84%
+                                            </span>
+                                            <p>Since last month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 chart">
+                            <div class="child">
+                                <h6>
+                                    <span>
+                                        <i class="las la-chart-bar"></i>
+                                        year chart
+                                    </span>
+                                    <i class="las la-ellipsis-v"></i>
+                                </h6>
+                                <div class="line-chart">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--second row-->
+                <div class="row sec-row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        <div class="child tableWrap">
+                            <h6>
+                                top selling products
+
+                                <span>
+                                    export
+                                    <i class="las la-cloud-download-alt"></i>
+                                </span>
+                            </h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            name
+                                            <i class="las la-sort"></i>
+                                        </th>
+                                        <th scope="col">
+                                            date
+                                            <i class="las la-sort"></i>
+                                        </th>
+                                        <th scope="col">
+                                            price
+                                            <i class="las la-sort"></i>
+                                        </th>
+                                        <th scope="col">
+                                            quantity
+                                            <i class="las la-sort"></i>
+                                        </th>
+                                        <th scope="col">
+                                            ammount
+                                            <i class="las la-sort"></i>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>product name</td>
+                                        <td>7 apr 2020</td>
+                                        <td>$55</td>
+                                        <td>23</td>
+                                        <td>$655,45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>product name</td>
+                                        <td>7 apr 2020</td>
+                                        <td>$66</td>
+                                        <td>45</td>
+                                        <td>$655,45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>product name</td>
+                                        <td>7 apr 2020</td>
+                                        <td>$88</td>
+                                        <td>56</td>
+                                        <td>$655,45</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>product name</td>
+                                        <td>7 apr 2020</td>
+                                        <td>$88</td>
+                                        <td>56</td>
+                                        <td>$655,45</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>product name</td>
+                                        <td>7 apr 2020</td>
+                                        <td>$88</td>
+                                        <td>56</td>
+                                        <td>$655,45</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 chart-2">
+                        <div class="child">
+                            <h6>
+                                <span>
+                                    <i class="las la-chart-bar"></i>
+                                    total sales
+                                </span>
+                                <i class="las la-ellipsis-v"></i>
+                            </h6>
+
+                            <div class="pie">
+                                <canvas id="pie" height="200px" width="200px"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext("2d");
+
+        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientStroke.addColorStop(0, '#00d8c0');
+        gradientStroke.addColorStop(1, '#ff6a72');
+
+        var gradientFill = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientFill.addColorStop(0, "rgba(0, 216, 192, 0.10)");
+        gradientFill.addColorStop(1, "rgba(255, 106, 114, 0.10)");
+
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
+                datasets: [{
+                    label: "Data",
+                    borderColor: gradientStroke,
+                    pointBorderColor: gradientStroke,
+                    pointBackgroundColor: gradientStroke,
+                    pointHoverBackgroundColor: gradientStroke,
+                    pointHoverBorderColor: gradientStroke,
+                    pointBorderWidth: 2,
+                    pointHoverRadius: 2,
+                    pointHoverBorderWidth: 1,
+                    pointRadius: 3,
+                    fill: true,
+                    backgroundColor: gradientFill,
+                    borderWidth: 2,
+                    data: [50, 150, 200, 270, 320, 470, 500]
+                }]
+            },
+            options: {
+                legend: {
+                    position: "bottom"
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "grey",
+                            fontStyle: "bold",
+                            beginAtZero: true,
+                            maxTicksLimit: 5,
+                            padding: 20
+                        },
+                        gridLines: {
+                            drawTicks: false,
+                            display: false
+                        }
+
+                    }],
+                    xAxes: [{
+                        gridLines: {
+                            zeroLineColor: "transparent"
+                        },
+                        ticks: {
+                            padding: 20,
+                            fontColor: "grey",
+                            fontStyle: "bold"
+                        }
+                    }]
+                }
+            }
+        });
+
+        var pieData = {
+            labels: ["RETURNS", "SALES", "DISCOUNTS"],
+            datasets: [{
+                data: [320, 500, 230],
+                backgroundColor: ["#e53759", "#1676b7", "#d69d19"],
+                hoverBackgroundColor: ["#ce2143", "#0c6099", "#bc8612"]
+            }]
+        };
+        var options = {
+            segmentShowStroke: false,
+            animateScale: true,
+            responsive: true,
+            legend: {
+                display: true,
+                position: "bottom"
+            },
+
+        };
+        var gas2 = document.getElementById("pie").getContext("2d");
+        new Chart(gas2, {
+            type: "pie",
+            data: pieData,
+            options: options
+        });
+    </script>
+
+
 </body>
 
 </html>

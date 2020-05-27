@@ -6,12 +6,15 @@
     --maincolor: #1D1F38;
     --navbar: #252C48;
     --accentColor: #262B4A;
+    --pinkish: rgb(231, 43, 131);
+    --lightergrey: rgb(172, 172, 172);
 }
 
 body,
 html {
     font-family: 'Karla', sans-serif;
     overflow-x: hidden;
+    background-color: var(--maincolor);
 }
 
 * {
@@ -19,4 +22,392 @@ html {
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.las {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+}
+
+/* sidebar and content wrapper */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* wrapper */
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: auto;
+    background-color: var(--navbar);
+    padding: 20px 10px;
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+}
+
+#sidebar::-webkit-scrollbar {
+    width: 0 !important
+}
+
+#sidebar::-moz-scrollbar {
+    width: 0 !important
+}
+
+#sidebar::-ms-scrollbar {
+    width: 0 !important
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-bottom: 2em;
+}
+
+#sidebar .sidebar-header .logo {
+    height: 20px;
+    width: 20px;
+}
+
+#sidebar .sidebar-header .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#sidebar .sidebar-header h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.99rem;
+    margin: 5px 0 0 10px;
+}
+
+#sidebar h6 {
+    color: rgb(117, 130, 202);
+    text-transform: uppercase;
+    padding: 0 0 10px 20px;
+    font-weight: 700;
+    font-size: 0.88rem;
+}
+
+#sidebar ul.components {
+    padding: 20px 0px;
+}
+
+#sidebar ul p {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li {
+    transition: 0.4s ease;
+    border-radius: 40px;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 0.88rem;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidebar ul li a span i {
+    padding: 0 8px;
+}
+
+#sidebar ul li:hover {
+    text-decoration: inherit;
+    background-color: var(--maincolor);
+}
+
+#sidebar ul li.active {
+    background-color: var(--maincolor);
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0px;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    .main .navbar {
+        width: 100%;
+        z-index: 10;
+    }
+
+}
+
+/* navbar*/
+
+.main {
+    height: auto;
+    width: 100%;
+}
+
+.admin,
+.main .right,
+.main .right .search {
+    display: flex;
+    align-items: center;
+}
+
+.main .right .search {
+    background-color: var(--accentColor);
+    border-radius: 40px;
+    padding: 5px;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.main .right .search input {
+    border: none;
+    background-color: inherit;
+    padding: 0 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.main .right .search input::placeholder {
+    color: rgb(194, 194, 194);
+    text-transform: capitalize;
+}
+
+.main .right .search button {
+    background-color: var(--pinkish);
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.main button.btn-info {
+    background-color: transparent;
+    border: 0;
+    color: #ffffff;
+}
+
+.admin ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.admin ul li .la-bell::after {
+    content: ' ';
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: var(--pinkish);
+    position: absolute;
+    right: 1px;
+}
+
+.admin ul li .profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.admin ul li .profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* content */
+.content {
+    padding: 30px;
+}
+
+.content .wrap {
+    padding: 0 5px;
+}
+
+.content .row .col-xl-5 .col-xl-6,
+.content .row .chart,
+.content .row .col-xl-5 .col-xl-8,
+.content .row .col-xl-5 .col-xl-4 {
+    padding: 10px;
+}
+
+.content .row .child {
+    color: #fff;
+    padding: 30px 30px 10px 30px;
+    background-color: var(--accentColor);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.content .row .child h6 {
+    font-size: 1em;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    color: var(--lightergrey);
+    margin-bottom: 20px;
+}
+
+.content .row .child h6 i {
+    color: var(--lightergrey);
+    margin-right: 5px;
+}
+
+.content .row .child h4 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.content .row .child span.status {
+    display: block;
+    font-size: 0.85rem;
+    padding-bottom: 3px;
+}
+
+.content .row .child span.status.up,
+.content .row .child span.status.up i {
+    color: rgb(75, 255, 75);
+}
+
+.content .row .child span.status.down,
+.content .row .child span.status.down i {
+    color: rgb(255, 75, 84);
+}
+
+.content .row .child p {
+    color: grey;
+    font-size: 0.85rem;
+}
+
+.content .row .chart .child {
+    height: 60vh;
+}
+
+.content .row .chart .child h6,
+.content .row .chart-2 .child h6,
+.content .row .child.tableWrap h6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.content .row .chart .child .line-chart {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .sec-row {
+    margin-top: 20px;
+}
+
+.content .row .child.tableWrap {
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.content .row .child.tableWrap h6 {
+    padding: 30px;
+    margin: 0;
+}
+
+.content .row .child.tableWrap h6 span,
+.content .row .child.tableWrap h6 span i {
+    color: var(--pinkish);
+    font-size: 0.90rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.content .row .child.tableWrap .table {
+    margin-bottom: 0;
+}
+
+.content .row .child.tableWrap .table thead th,
+.content .row .child.tableWrap .table th,
+.content .row .child.tableWrap .table thead,
+.content .row .child.tableWrap .table td {
+    border-bottom: 1px solid rgb(68, 73, 97);
+    border-top: 1px solid rgb(68, 73, 97);
+}
+
+.content .row .child.tableWrap .table thead th,
+.content .row .child.tableWrap .table th {
+    color: rgb(150, 150, 150);
+    background-color: rgba(31, 33, 58, 0.637);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+}
+
+.content .row .child.tableWrap .table thead th i,
+.content .row .child.tableWrap .table th i {
+    color: rgb(150, 150, 150);
+}
+
+.content .row .child.tableWrap .table td {
+    font-size: 0.88rem;
+    color: lightgrey;
+    text-transform: capitalize;
 }
