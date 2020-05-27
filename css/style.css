@@ -1,0 +1,22 @@
+/* import main font from google */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* variables and defaul css */
+:root {
+    --maincolor: #1D1F38;
+    --navbar: #252C48;
+    --accentColor: #262B4A;
+}
+
+body,
+html {
+    font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
