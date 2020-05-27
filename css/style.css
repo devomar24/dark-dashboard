@@ -1,7 +1,7 @@
 /* import main font from google */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
-/* variables and defaul css */
+/* variables & defaul css */
 :root {
     --maincolor: #1D1F38;
     --navbar: #252C48;
@@ -36,6 +36,7 @@ button {
     outline: none;
 }
 
+/* icons */
 .las {
     color: #fff;
     font-weight: bold;
@@ -116,12 +117,6 @@ button {
 
 #sidebar ul.components {
     padding: 20px 0px;
-}
-
-#sidebar ul p {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
 }
 
 #sidebar ul li {
@@ -250,6 +245,7 @@ a[data-toggle="collapse"] {
     padding-top: 5px;
 }
 
+/* notification dot */
 .admin ul li .la-bell::after {
     content: ' ';
     height: 7px;
@@ -260,6 +256,7 @@ a[data-toggle="collapse"] {
     right: 1px;
 }
 
+/* admin profile pic */
 .admin ul li .profile {
     height: 40px;
     width: 40px;
@@ -339,7 +336,8 @@ a[data-toggle="collapse"] {
 }
 
 .content .row .chart .child {
-    height: 60vh;
+    height: auto;
+    padding-bottom: 35px;
 }
 
 .content .row .chart .child h6,
@@ -403,7 +401,7 @@ a[data-toggle="collapse"] {
 
 .content .row .child.tableWrap .table thead th i,
 .content .row .child.tableWrap .table th i {
-    color: rgb(150, 150, 150);
+    color: var(--lightergrey);
 }
 
 .content .row .child.tableWrap .table td {
