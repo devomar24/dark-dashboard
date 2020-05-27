@@ -134,7 +134,6 @@ button {
     text-decoration: none;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -154,13 +153,6 @@ button {
 
 a[data-toggle="collapse"] {
     position: relative;
-}
-
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
